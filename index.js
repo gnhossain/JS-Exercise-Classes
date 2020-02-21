@@ -227,6 +227,26 @@ class ProjectManager extends Instructor {
       + If the student's grade is above a 70% let them graduate! Otherwise go back to grading their assignments to increase their score.
 */
 
+const studOne = new Student({
+  name: "studOne"
+});
+
+const instructorOne = new Instructor({
+  name: "insOne"
+});
+
+const instructorTwo = new ProjectManager({
+  name: "insTwo"
+});
+
+console.log(studOne.grade);
+console.log(instructorOne.adjustGrade(studOne));
+console.log(studOne.grade);
+console.log(instructorTwo.adjustGrade(studOne));
+console.log(studOne.grade);
+console.log(studOne.graduate());
+
+
 
 ///////// END OF CHALLENGE /////////
 ///////// END OF CHALLENGE /////////
